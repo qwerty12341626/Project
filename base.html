@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Калькулятор роботизации{% endblock %}</title>
+    <link rel="stylesheet" href=""{{ url_for('static', filename='style.css') }}
+</head>
+<body>
+    <nav>
+        <a Главная href="/">Главная</a>
+        <a Главная href="/catalog">Каталог</a>
+        <a Главная href="/methodology">Методика</a>
+        <a Главная href="/about">О проекте</a>
+    </nav>
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+</body>
+</html>
